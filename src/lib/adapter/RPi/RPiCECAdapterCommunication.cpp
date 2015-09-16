@@ -70,7 +70,8 @@ CRPiCECAdapterCommunication::CRPiCECAdapterCommunication(IAdapterCommunicationCa
     m_logicalAddress(CECDEVICE_UNKNOWN),
     m_bLogicalAddressChanged(false),
     m_previousLogicalAddress(CECDEVICE_FREEUSE),
-    m_bLogicalAddressRegistered(false)
+    m_bLogicalAddressRegistered(false),
+    m_bInitialised(false)
 {
   m_queue = new CRPiCECAdapterMessageQueue(this);
 }
